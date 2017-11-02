@@ -1,0 +1,71 @@
+
+::-moz-selection { background: #727272; }
+::selection { background: #727272; }
+
+body {
+	background: url("../img/hexabump.png");
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+#topbar {
+	text-align: right;
+    width: 100%;
+    position: fixed;
+    margin-top: 5px;
+    padding-right: 10px;
+    z-index: 999;
+}
+
+#topbar .social-shortcuts {
+    color: #fff;
+}
+
+#topbar .social-shortcuts .link {
+    font-size: 2em;
+    color: #fff;
+    opacity: 0.85;
+    transition: 0.25s ease-out;
+    text-decoration: none;
+}
+#topbar .social-shortcuts .link:hover {
+    opacity: 1.0;
+}
+
+.title, .subtitle {
+	color: #f0f2f4;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 100;
+	text-transform: lowercase;
+}
+
+#title {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 100;
+}
+
+.tile-image > img {
+	border-radius: 6px;
+}
+
+.tile-accent {
+	font-weight: 500;
+}
+
+.tile.invisible {
+	background: none;
+}
+
+/* Manual Overrides */
+
+.notification.is-info {
+	background-color: #3c3c3c;
+}
+
+.notification.is-primary {
+	background-color: #515151;
+}
+
+.notification.is-success {
+	background-color: #666;
+}
