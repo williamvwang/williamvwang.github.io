@@ -5,7 +5,7 @@
   <!-- Metadata -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Facebook -->
   <meta property="og:title" content="William Wang">
@@ -24,59 +24,73 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
   <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://unpkg.com/feather-icons"></script>
   <link href="/css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
-
   <section id="main">
     <div class="container">
-
       <div class="row">
         <div class="column">
           <h1>William Wang</h1>
         </div>
       </div>
-
-      <div class="row">
-        <div class="column">
-          <h3 id="job">
-            Cloud SWE @ Schlumberger
-          </h3>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="column">
-          <h3>BACS '18, Rice University</h3>
-        </div>
-      </div>
-
       <div class="row">
         <div class="column">
           <h3>
-            <a href="/assets/WilliamWang_web.pdf" target="_blank" class="social-shortcut" title="CV"
-              style="font-size: 2.6rem;">
-              <i class="fas fa-fw fa-id-badge"></i>
-            </a>
-            <a href="https://linkedin.com/in/williamvwang/" target="_blank" class="social-shortcut" title="LinkedIn">
-              <i class="fab fa-fw fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/williamvwang/" target="_blank" class="social-shortcut" title="Github">
-              <i class="fab fa-fw fa-github-alt"></i>
+            <a href="https://www.cs.rice.edu/" target="_blank">
+              BACS '18, Rice University
             </a>
           </h3>
         </div>
       </div>
-
+      <div class="row">
+        <div class="column">
+          <dl>
+            <h3 id="current">
+              <dt>
+                <a href="https://www.software.slb.com/" target="_blank">
+                  <i data-feather="download-cloud"></i>
+                  Cloud @ Schlumberger
+                </a>
+              </dt>
+            </h3>
+            <h5 id="previously">
+              <dd>
+                <a href="https://www.jpmorgan.com/global/technology" target="_blank">
+                  Global Technology Infrastructure @ JPMorgan Chase
+                </a>
+              </dd>
+            </h5>
+          </dl>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3>
+            <a href="/assets/WilliamWang_web.pdf" target="_blank" class="social" title="CV">
+              <i data-feather="briefcase"></i>
+            </a>
+            <a href="https://linkedin.com/in/williamvwang/" target="_blank" class="social" title="LinkedIn">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="https://github.com/williamvwang/" target="_blank" class="social" title="Github">
+              <i data-feather="github"></i>
+            </a>
+          </h3>
+        </div>
+      </div>
     </div>
   </section>
-
+  <script>
+    feather.replace({
+      'stroke-width': 1.5,
+    });
+  </script>
 </body>
 
 </html>
