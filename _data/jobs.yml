@@ -1,0 +1,15 @@
+current:
+  company: Oracle
+  role: Network Automation
+  link: https://www.oracle.com/cloud/
+  icon: wifi
+previous:
+  - company: Schlumberger
+    role: Cloud
+    link: https://www.software.slb.com/
+  - company: JPMorgan Chase
+    role: Global Technology Infrastructure
+    link: https://www.jpmorgan.com/global/technology
+  - company: HackRice
+    role: Organizer
+    link: https://hack.rice.edu/

@@ -1,103 +1,69 @@
-<html>
-
-<head>
-
-  <!-- Metadata -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Facebook -->
-  <meta property="og:title" content="William Wang">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://williamvwang.github.io/img/logo.png">
-  <meta property="og:image:width" content="256">
-  <meta property="og:image:height" content="256">
-  <meta property="og:url" content="https://williamvwang.github.io">
-  <meta property="og:description" content="">
-
-  <title>William Wang</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link href="/css/main.css" rel="stylesheet">
-
-</head>
-
-<body>
-  <section id="main">
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <h1>William Wang</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <h3>
-            <a href="https://www.cs.rice.edu/" target="_blank">
-              BACS '18, Rice University
-            </a>
-          </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <dl>
-            <h3 id="current">
-              <dt>
-                <a href="https://www.software.slb.com/" target="_blank">
-                  <i data-feather="download-cloud"></i>
-                  Cloud @ Schlumberger
-                </a>
-              </dt>
-            </h3>
-            <h5 id="previously">
-              <dd>
-                Previously:
-              </dd>
-              <dd>
-                <a href="https://www.jpmorgan.com/global/technology" target="_blank">
-                  Global Technology Infrastructure @ JPMorgan Chase
-                </a>
-              </dd>
-              <dd>
-                <a href="https://hack.rice.edu/" target="_blank">
-                  Organizer @ HackRice
-                </a>
-              </dd>
-            </h5>
-          </dl>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <h3>
-            <a href="/assets/WilliamWang.pdf" target="_blank" class="social" title="CV">
-              <i data-feather="briefcase"></i>
-            </a>
-            <a href="https://linkedin.com/in/williamvwang/" target="_blank" class="social" title="LinkedIn">
-              <i data-feather="linkedin"></i>
-            </a>
-            <a href="https://github.com/williamvwang/" target="_blank" class="social" title="Github">
-              <i data-feather="github"></i>
-            </a>
-          </h3>
-        </div>
+---
+layout: default
+title: William Wang
+---
+<section id="main">
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <h1>William Wang</h1>
       </div>
     </div>
-  </section>
-  <script>
-    feather.replace({
-      'stroke-width': 1.5,
-    });
-  </script>
-</body>
-
-</html>
+    <div class="row">
+      <div class="column">
+        <h3>
+          <a href="https://www.cs.rice.edu/" target="_blank">
+            BACS '18, Rice University
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <dl>
+          <h3 id="current">
+            <dt>
+              {% assign current = site.data.jobs.current %}
+              <a href="{{ current.link }}" target="_blank">
+                <i data-feather="{{ current.icon }}"></i>
+                {{ current.role }} @ {{ current.company }}
+              </a>
+            </dt>
+          </h3>
+          <h5 id="previously">
+            <dd>
+              Previously:
+            </dd>
+            {% for job in site.data.jobs.previous %}
+            <dd>
+              <a href="{{ job.link }}" target="_blank">
+                {{ job.role }} @ {{ job.company }}
+              </a>
+            </dd>
+            {% endfor %}
+          </h5>
+        </dl>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>
+          <a href="/assets/WilliamWang.pdf" target="_blank" class="social" title="CV">
+            <i data-feather="briefcase"></i>
+          </a>
+          <a href="https://linkedin.com/in/williamvwang/" target="_blank" class="social" title="LinkedIn">
+            <i data-feather="linkedin"></i>
+          </a>
+          <a href="https://github.com/williamvwang/" target="_blank" class="social" title="Github">
+            <i data-feather="github"></i>
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  feather.replace({
+    'stroke-width': 1.5,
+  });
+</script>
